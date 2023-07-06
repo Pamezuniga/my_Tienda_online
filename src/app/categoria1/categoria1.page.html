@@ -1,0 +1,23 @@
+<ion-header>
+  <ion-toolbar color="mycolor">
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Camisetas</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card *ngFor="let p of producto">
+    <img alt="Silhouette of mountains" src="{{p.imagen}}" />
+    <ion-card-header>
+      <ion-card-title>{{p.titulo}}</ion-card-title>
+    </ion-card-header>
+  
+    <ion-card-content>
+      {{p.descripcion}}
+    </ion-card-content>
+    <h3>Deseas Adquirir el Articulo?</h3>
+    <ion-button href="https://wa.link/zb091y" target="_system">Ir al Perfil del Vendedor</ion-button>
+  </ion-card>
+</ion-content>
